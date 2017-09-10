@@ -210,90 +210,110 @@ border-top: 5px solid black;
 
 
 
-/*Desktop
-@media screen and (min-width:768px ){
-
-  #container{
-    width:100%;
-}
-section {
-  width:70%;
-}
-figure img{
-  width:10%;
-}
-
-}
-*/
-
-/*tablet
-
-@media screen and (min-width:321px ){
-
-
-section {
-  width:100%;
-}
-figure img{
-  width:100%;
-}
-}
-  */
-
-
-/*mobile*/
-
-@media screen  and (max-width:320px){
-
+@media screen and (max-width:500px){
   header{
-  background-repeat: no-repeat;
-  background-position: contain;
-  background-size:100% 100%;
+    background-image:url('../img/white.jpg');
+    border-bottom: 2px solid black;
+    height: 100px;
+    width: 100%;
   }
-  header h1 {
-  font-size: 15px;
-  font-color:black;
+  nav{
+    text-align:center;
   }
-  header p {
-  font-size: 15px;
-  font-color:white;
+  nav ul{
+  position: relative;
+  top:50px;
+  right: 10px;
+  display: inline;
+  width: 20%
   }
-/* come back to insert a new smaller image*/
-   img{
-     width:100px;
-    height:200px;
-    display:inline-block
+  nav li{
+  display:inline;
+  margin:10px 10px 0px 0px;
   }
-
-    section {
-    background-position:center;
-    background-size:cover;
-    line-height:10px;
-      font-size:10px
-      display:inline;
-      height:auto;
-     width:auto;
-    }
-    section h2{
-      line-height: 20px;
-    }
-   footer {
-  display:block;
-  width:100%;
-  height:7vh;
-  font-size:12px;
-  background-color:black;
-    color:white;
-    text-align: center;
-    /*border:10px;*/
-
+  nav a{
+    color:grey;
+    text-decoration: none;
+    font-size:20px;
+    text-align:right;
+    padding: 10px 10px;
+    font-family: Roboto;
+  }
+  .logo img{
+    position: relative;
+    left:30px;
+    bottom:10px;
+    display:inline-block;
+    width:30px;
+    height:30px;
 }
 
-footer li{
+.sidebar > img{
+    display:block;
+    height:120px;
+    width:40%;
+    padding: 10px;
+    margin:0 auto;
+    border-radius: 50%;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+.sidebar{
+  float: right;
+  overflow: hidden;
+  height: 300px;
+  width: 100%;
+  background-color: white;
+border-bottom: 1px solid black;
+}
+.sidebar h2{
+  text-align: center;
+    margin-bottom: 20px;
+    color:grey;
+    font-family: 'Monoton';
+    font-size:20px;
+  }
+.sidebar ul{
+position: relative;
+width: 100%;
+left:60px;
+}
+ .sidebar li{
   display:inline-block;
+}
+.sidebar li img{
+  height:40px;
+  width: 50px;
+}
+.location{
+ width:100%;
+ display: block;
+ height: 300px;
+ margin: 5px;
+ }
+form {
+/* Just to center the form on the page */
+display: block;
+width: 100%;
+background-color: grey;
+/*background-image:url('../img/bck.jpg');*/
+height:200px;
+
+
+/* To see the limits of the form */
+padding: .1em;
+border: 3px solid #CCC;
+border-radius: 1em;
 
 }
+body{
+  background-color:white;
+  overflow: scroll;
+}
 
-footer img{
-  height:25px;
-  width: 25px;
+  footer {
+  background-image: url('../img/white.jpg');
+  height: 50px;
+  width: 100%;
+  border-top: 5px solid black;
+}
